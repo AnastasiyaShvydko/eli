@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Marcellus&family=Parisienne&display=swap');
+
+
+:root {
+  --terracotta: #512500;
+  --olive: #D7D9B1;
+  --sand: #E8DCC0;
+  --pomegranate: #7D1D3F;
+  --charcoal: #1D1D1B;
+  --cream: #FAF7F2;
+  --blue: #84ACCE;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* a {
+  font-weight: 500;
+  color: #358d81;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #278a4a;
+} */
+
+html,
+:host {
+    text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  
+  min-width: 320px;
+  min-height: 100vh;
+ 
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button
+button:hover {
+ 
+}
+button:focus,
+button:focus-visible {
+  
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn-menu {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #c3ced8;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.btn-menu svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn-menu:hover {
+  transition: 1s ease-in-out;
+  background: var(--sand);
+  color: var(--charcoal);
+ 
+   
+}
+
+.btn-menu:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn-menu span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+.btn-menu:hover span {
+  color: var(--charcoal);
+  font-size: 18px;
+  font-weight: 100;
+}
+
+
+
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    
+  }
+  a:hover {
+    color: #54a867;
+  }
+  button {
+    background-color: #f9f9f9;
+  } */
+/* } */
