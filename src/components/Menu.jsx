@@ -58,7 +58,7 @@ const CATEGORIES = ["All", "Shawarma", "Platters", "Sides", "Drinks"];
     price: "$4.99",
     category: "Drinks",
     desc: "Fresh lemon, mint, ice.",
-    img: "/menu/mint-lemonade.jpg",
+    img: "https://res.cloudinary.com/dbh4o00x2/image/upload/v1769784623/th_wkfa42.jpg",
   },
   {
     id: 8,
@@ -66,7 +66,7 @@ const CATEGORIES = ["All", "Shawarma", "Platters", "Sides", "Drinks"];
     price: "$3.99",
     category: "Drinks",
     desc: "Traditional yogurt drink.",
-    img: "/menu/ayran.jpg",
+    img: "https://res.cloudinary.com/dbh4o00x2/image/upload/v1769784758/th_1_idbf0o.jpg",
   },
 ];
 
@@ -90,23 +90,24 @@ export default function Menu() {
 
       {/* Tabs */}
       <div className="flex justify-center mb-10">
-        <div className="flex gap-3 overflow-x-auto pb-2">
-          {CATEGORIES.map(cat => (
-            <button
-              key={cat}
-              onClick={() => setActive(cat)}
-              className={[
-                "px-4 py-2 rounded-full text-sm md:text-base whitespace-nowrap border transition",
-                active === cat
-                  ? "bg-[var(--terracotta)] text-[var(--cream)] border-[var(--terracotta)]"
-                  : "bg-white text-[var(--charcoal)] border-gray-300 hover:border-[var(--terracotta)] hover:text-[var(--terracotta)]"
-              ].join(" ")}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-      </div>
+
+<div className="flex flex-wrap gap-3 justify-center pb-2">
+    {CATEGORIES.map(cat => (
+      <button
+        key={cat}
+        onClick={() => setActive(cat)}
+        className={[
+          "px-4 py-2 rounded-full text-sm md:text-base whitespace-nowrap border transition",
+          active === cat
+            ? "bg-[var(--terracotta)] text-[var(--cream)] border-[var(--terracotta)]"
+            : "bg-white text-[var(--charcoal)] border-gray-300 hover:border-[var(--terracotta)] hover:text-[var(--terracotta)]"
+        ].join(" ")}
+      >
+        {cat}
+      </button>
+    ))}
+  </div>
+</div>
 
       {/* Items */}
       <div className="grid gap-6 md:grid-cols-2">
@@ -120,7 +121,8 @@ export default function Menu() {
     <img
       src={item.img}
       alt={item.name}
-      className="w-full h-[30rem]  object-cover object-buttom rounded-t-lg "
+      className="w-full h-[10rem] lg:h-[25rem] object-cover  "
+
     />
   )}
 

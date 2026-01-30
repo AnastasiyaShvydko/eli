@@ -52,18 +52,18 @@ export default function Footer() {
   <div className="space-y-2 text-sm mb-4">
     <p className="flex items-start gap-2">
       <MapPin size={16} className="mt-0.5" />
-      <span>123-9421 Jane St, Maple ON L6A4H8 </span>
+      <span>Maple, ON </span>
     </p>
     <p className="flex items-center gap-2">
       <Phone size={16} />
       <a href="tel:+16476166560" className="hover:text-[var(--terracotta)] transition">
-        +1 (647) 616-6560
+        +1 (647) 111-11-11
       </a>
     </p>
     <p className="flex items-center gap-2">
       <Mail size={16} />
       <a href="mailto:info@elistable.ca" className="hover:text-[var(--terracotta)] transition">
-        info@elistable.ca
+        info@gmail.ca
       </a>
     </p>
   </div>
@@ -72,7 +72,7 @@ export default function Footer() {
   <div className="w-full h-40 md:h-48 rounded-lg overflow-hidden border border-[#363632]">
     <iframe
       title="Eli's Table Location"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.932415397365!2d-79.53576152428198!3d43.83649927109396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2f36db8cb65d%3A0x468916ea484ed744!2s9421%20Jane%20St%20Unit%20123%2C%20Maple%2C%20ON%20L6A%204H8!5e0!3m2!1sen!2sca!4v1763484385217!5m2!1sen!2sca"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46035.80214811789!2d-79.56634995750038!3d43.850903049600475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b29035d80589d%3A0xe9c39e17ba1ddefd!2sMaple%2C%20Vaughan%2C%20ON!5e0!3m2!1sen!2sca!4v1765491162798!5m2!1sen!2sca"
       width="100%"
       height="100%"
       style={{ border: 0 }}

@@ -8,8 +8,8 @@ export default function HeroButton() {
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Text content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-        <h1 className="text-4xl md:text-6xl font-cinzel
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white ">
+        <h1 className="text-2xl md:text-6xl font-cinzel
          mb-4">
           Authentic Mediterranean Taste
         </h1>

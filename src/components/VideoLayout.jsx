@@ -6,13 +6,10 @@ import Footer from "./Footer.jsx";
 import Menu from "./Menu.jsx";
 import About from "./About.jsx";
 
-
 export default function VideoLayout({ children }) {
- const videos = [
-    
+  const videos = [
     "/videos/eli-hero2.mp4",
     "/videos/eli-hero3.mp4",
-    
   ];
 
   const [index, setIndex] = useState(0);
@@ -20,17 +17,15 @@ export default function VideoLayout({ children }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % videos.length);
-    }, 8000); // change every 8 seconds
-
+    }, 8000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="relative min-h-screen text-white">
-
-      {/* ВИДЕО – фиксированный фон (parallax) */}
+      {/* Фон-видео */}
       <video
-      key={videos[index]}
+        key={videos[index]}
         autoPlay
         muted
         loop
@@ -45,24 +40,35 @@ export default function VideoLayout({ children }) {
         <source src={videos[index]} type="video/mp4" />
       </video>
 
-      {/* Тёмный overlay для читабельности текста */}
+      {/* Тёмный overlay */}
       <div className="fixed inset-0 bg-black/40 -z-10" />
 
-      {/* Навбар + контент поверх */}
+      {/* Навбар (если нужен) */}
       <Navbar />
+
+      {/* Контент */}
       <main className="relative z-10">
-        {children}
-        <HeroButton />
-        <Menu />
-         <div className="relative z-10">
-          <About />
-        <Footer />
-      </div>
+        <div
+          className="
+            mx-auto
+            w-full
+            max-w-5xl
+            px-4 sm:px-6 lg:px-8
+            pt-20 sm:pt-24
+            pb-10
+          "
+        >
+          {children}
+
+          {/* сюда можешь вернуть остальные блоки */}
+          <HeroButton /> 
+           <Menu /> 
+          <About /> 
+           <Footer />
+        </div>
       </main>
     </div>
   );
 }
-
-
 
 

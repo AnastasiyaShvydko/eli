@@ -41,7 +41,7 @@ import DiscountAlert from './components/DiscountAlert';
 export default function App() {
   return (
     <VideoLayout>
-      <DiscountAlert />
+      {/* <DiscountAlert /> */}
       {/* <section className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-5xl font-[var(--fancy)] mb-4">Eli’s Table</h1>
