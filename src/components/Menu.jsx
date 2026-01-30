@@ -34,7 +34,7 @@ const CATEGORIES = ["All", "Shawarma", "Platters", "Sides", "Drinks"];
     price: "$19.99",
     category: "Platters",
     desc: "Chicken, beef, rice, salad, sauces.",
-    img: "/menu/mixed-grill.jpg",
+    img: "https://res.cloudinary.com/dbh4o00x2/image/upload/v1769785109/MixedGrillBeauty_ksg41y.jpg",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const CATEGORIES = ["All", "Shawarma", "Platters", "Sides", "Drinks"];
     price: "$7.50",
     category: "Sides",
     desc: "Creamy hummus, warm pita.",
-    img: "/menu/hummus-pita.jpg",
+    img: "https://res.cloudinary.com/dbh4o00x2/image/upload/v1769784955/OIP_pypkxm.webp",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const CATEGORIES = ["All", "Shawarma", "Platters", "Sides", "Drinks"];
     price: "$4.50",
     category: "Sides",
     desc: "Crispy golden fries.",
-    img: "/menu/pasta-with-zucchini-chicken-green-peas.jpg",
+    img: "https://res.cloudinary.com/dbh4o00x2/image/upload/v1769785031/th_2_vgi4x7.jpg",
   },
   {
     id: 7,
